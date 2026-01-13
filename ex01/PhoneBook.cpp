@@ -43,9 +43,10 @@ void search_contact(PhoneBook phonebook, std::string &input) {
 				std::cout << "Darkest Secret: " 
 				<< phonebook.showContactByIndex(std::stoi(input)).getSec() << std::endl;
 			}
-		}
-		if (!input.empty())
 			break;
+		}
+		else
+			std::cout << "invalid input: enter a number between 0 and 7" << std::endl;
 	}
 }
 
